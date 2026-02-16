@@ -1,0 +1,265 @@
+/* --- TEMEL AYARLAR --- */
+:root {
+    /* Renk değişkenleri: Tüm sitede kullanılan ana renkleri buradan tek seferde yönetirsin */
+    --bg: #050505; /* Arka plan siyahı */
+    --grad: linear-gradient(45deg, #8a2be2, #00d4ff, #ff4500); /* Mor-Mavi-Turuncu geçiş rengin */
+    --glass: rgba(255, 255, 255, 0.03); /* Kartlar için şeffaf cam efekti */
+}
+
+/* Sayfadaki tüm elementlerin boşluklarını sıfırlar ve kutu modelini düzeltir */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Sayfa içi linklere (Örn: Projeleri Gör) tıklandığında sayfanın yumuşakça kaymasını sağlar */
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg); /* Arka planı siyah yapar */
+    color: white; /* Tüm yazıların ana rengini beyaz yapar */
+    font-family: 'Inter', sans-serif; /* Modern ve okunaklı yazı tipi */
+    overflow-x: hidden; /* Sayfanın yanlara doğru taşmasını engeller */
+    line-height: 1.6; /* Satır aralıklarını ferahlatır */
+}
+
+/* --- ANİMASYONLAR --- */
+/* Logonun ekranın ortasından başlayıp sol üste kaymasını sağlayan hareket planı */
+@keyframes moveLogo {
+    0% { top: 50%; left: 50%; transform: translate(-50%, -50%); } /* Başlangıç: Tam merkez */
+    100% { top: 40px; left: 5%; transform: translate(0, 0); font-size: 1.5rem; } /* Bitiş: Sol üst köşe */
+}
+
+/* İçeriklerin aşağıdan yukarıya doğru yavaşça belirmesini sağlayan efekt */
+@keyframes fadeInContent {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- HERO BÖLÜMÜ (Giriş Ekranı) --- */
+.intro-wrapper {
+    height: 100vh; /* Ekranın tam boyunu kaplar */
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortalar */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    padding: 0 5%;
+    position: relative;
+}
+
+.main-logo {
+    font-weight: 800;
+    position: absolute;
+    z-index: 100; /* Logonun her zaman en üstte durmasını sağlar */
+    font-size: 3rem;
+    letter-spacing: -1px;
+    /* Logoya yukarıda yazdığımız moveLogo hareketini verir (1sn bekler, 1.5sn sürer) */
+    animation: moveLogo 1.5s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+}
+
+/* Logodaki renkli kısmın (span) gradyan efektini almasını sağlar */
+.main-logo span {
+    background: var(--grad);
+    -webkit-background-clip: text; /* Renk geçişini sadece yazıya hapset */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Yazının içini boşalt ki arka plan gözüksün */
+}
+
+.hero-content {
+    opacity: 0; /* Başlangıçta gizli */
+    transform: translateY(30px); /* Başlangıçta biraz aşağıda */
+    text-align: center;
+    /* Yazıların 2.2 saniye sonra belirmesini sağlar */
+    animation: fadeInContent 1.2s ease 2.2s forwards;
+}
+
+/* "Dijital dünyadaki kalenizi..." yazısının ekran boyutuna göre büyümesini sağlar */
+.gradient-text {
+    font-size: clamp(2.5rem, 8vw, 4rem); /* Mobilde 2.5rem, PC'de 4rem olur */
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* --- PROJELERİ GÖR BUTONU --- */
+.neon-button {
+    display: inline-block;
+    padding: 18px 45px;
+    margin-top: 35px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    border: 1px solid rgba(0, 212, 255, 0.5); /* İnce mavi çerçeve */
+    border-radius: 5px; /* Daha modern keskin köşeler */
+    position: relative;
+    transition: all 0.4s ease; /* Fareyle üzerine gelinceki hızı ayarlar */
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.2); /* Hafif mor ışık */
+}
+
+/* Butonun üzerine gelindiğinde olacak değişimler */
+.neon-button:hover {
+    background: var(--grad); /* Arka planı gradyanla doldur */
+    border-color: transparent;
+    transform: translateY(-5px); /* Hafif yukarı zıplatır */
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4); /* Parlama efekti */
+    letter-spacing: 5px; /* Harfler birbirinden uzaklaşır (Premium efekt) */
+}
+
+/* --- PROJE KARTLARI --- */
+.project-section { padding: 80px 5%; }
+
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; opacity: 0.8; }
+
+/* Kartların yan yana dizilmesini ve mobilde alt alta geçmesini sağlar */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Esnek kolon yapısı */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: var(--glass); /* Çok hafif şeffaf beyaz arka plan */
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+/* Kartın üzerine gelince büyümesini ve parlamasını sağlar */
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    background: rgba(138, 43, 226, 0.05);
+}
+
+/* Kartın altındaki "UX / UI" etiketleri */
+.card-tag {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    border-radius: 50px;
+    background: var(--grad);
+    display: inline-block;
+}
+
+/* --- SERTİFİKALAR --- */
+.creds-section { padding: 80px 5%; background: #080808; }
+
+.creds-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Sığmayınca alta geçer */
+}
+
+.cred-item {
+    background: var(--glass);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px dashed rgba(138, 43, 226, 0.3); /* Sertifika gibi kesikli çerçeve */
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+/* --- FOOTER (Alt Kısım) --- */
+footer {
+    padding: 80px 10%;
+    border-top: 1px solid rgba(138, 43, 226, 0.2);
+    text-align: center;
+}
+
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    opacity: 0.7; /* Normalde biraz sönük durur */
+}
+
+/* Sosyal medya linklerinin üzerine gelince parlaması */
+.social-links a:hover {
+    opacity: 1;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+/* Senin meşhur mail linkin! */
+.mail-link {
+    background: var(--grad);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #8a2be2;
+    border-bottom: 1px solid #8a2be2; /* Alt çizgi ekler */
+    text-decoration: none;
+    z-index: 100;
+    cursor: pointer !important;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: #444;
+    margin-top: 50px;
+}
+
+/* --- HAKKIMDA BÖLÜMÜ (PC'DE DEV VE ŞIK) --- */
+.about-section {
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content h2 {
+    /* PC'de çok daha büyük ve baskın durması için */
+    font-size: 4rem; 
+    line-height: 1.1;
+    margin-bottom: 30px;
+    padding-left: 0; /* PC'de ortalı durması daha modern */
+    text-align: center;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-content p {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #e0e0e0
+}
+
+/* --- MOBİL VE EKRAN UYUMU (Sığma Sorunları İçin) --- */
+@media (max-width: 768px) {
+    /* Telefondaki "Merhaba" yazısını bozmadan koruyoruz (Senin beğendiğin hal) */
+    .about-content h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* Footer'daki sığmayan mail ve link sorunu çözümü */
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* PC'de yan yana dururken aralarındaki boşluk */
+        flex-wrap: wrap;
+    }
+    .social-links a {
+        font-size: 0.8rem;
+        display: block; /* Tıklama alanını genişletir */
+    }
+
+    .mail-link {
+        font-size: 0.85rem; /* Mail adresi uzun olduğu için biraz küçülttük */
+        word-break: break-all; /* Çok küçük ekranlarda maili böler, ekranı patlatmaz */
+    }
+}
