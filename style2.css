@@ -227,7 +227,41 @@ footer {
     margin: 0 auto;
     color: #e0e0e0
 }
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
 
+.filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--gradient-text); 
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.project-card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.project-card.hide {
+    display: none;
+    opacity: 0;
+    transform: scale(0.8);
+}
 
 @media (max-width: 768px) {
     .about-content h2 {
