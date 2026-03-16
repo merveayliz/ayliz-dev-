@@ -320,8 +320,6 @@ footer {
     }
 .filter-btn:hover, .filter-btn.active {
     background: var(--gradient-text); 
-    border-color: transparent;
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
     transform: translateY(-2px);
 }
     .gradient-text {
