@@ -22,7 +22,9 @@ GitHub: Versiyon kontrolü ve sürekli yayınlama (Deployment).
 📈 Hedeflerim
 Bu benim için bir bitiş değil, sadece başlangıç. Hedefim, tasarımın estetiği ile JavaScript'in gücünü birleştirerek "yaşayan" dijital deneyimler üretmeye devam etmek.
 
-🇺🇸 English Version (README.md)
+
+
+
 🚀 AYLIZ.DEV | Junior Front-End Journey
 Hello! I'm Merve Ayliz. This portfolio is a summary of my self-taught coding journey, the hard work I've put in from scratch, and the transition from "why isn't this code working?" to "I did it!"
 
