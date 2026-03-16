@@ -262,28 +262,75 @@ footer {
     opacity: 0;
     transform: scale(0.8);
 }
-
 @media (max-width: 768px) {
+    .project-section {
+        padding: 40px 15px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+    }
+
+    .project-card {
+        padding: 15px;
+        border-radius: 12px; 
+    }
+
+    .project-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .project-card p {
+        font-size: 0.75rem; 
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .project-card span {
+        font-size: 0.7rem; 
+    }
+
+    .card-tag {
+        font-size: 0.6rem;
+        padding: 3px 8px;
+        margin-top: 10px;
+    }
+
+    .filter-container {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
     .about-content h2 {
         font-size: 2.2rem;
         text-align: center;
     }
 
-    
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
     .social-links {
         display: flex;
-        justify-content: center;
-        gap: 30px; 
-        flex-wrap: wrap;
-    }
-    .social-links a {
-        font-size: 0.8rem;
-        display: block; 
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
     }
 
     .mail-link {
-        font-size: 0.85rem; 
-        word-break: break-all; 
+        font-size: 0.8rem;
     }
-
 }
