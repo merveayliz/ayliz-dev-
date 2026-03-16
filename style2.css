@@ -314,10 +314,16 @@ footer {
     }
 
     .filter-btn {
+      background:#FF778899;
         padding: 5px 10px;
         font-size: 0.65rem;
     }
-
+.filter-btn:hover, .filter-btn.active {
+    background: var(--gradient-text); 
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+    transform: translateY(-2px);
+}
     .gradient-text {
         font-size: 1.8rem !important; 
         line-height: 1.3;
