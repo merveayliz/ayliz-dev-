@@ -318,7 +318,7 @@ footer {
         padding: 5px 10px;
         font-size: 0.65rem;
     }
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover {
     background: var(--gradient-text); 
     transform: translateY(-2px);
 }
