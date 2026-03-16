@@ -262,75 +262,59 @@ footer {
     opacity: 0;
     transform: scale(0.8);
 }
-@media (max-width: 768px) {
-    .project-section {
-        padding: 40px 15px;
-    }
 
+
+@media (max-width: 768px) {
     .project-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 12px;
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr !important; 
+        gap: 10px !important;
+        padding: 0 !important;
+        width: 100% !important;
     }
 
     .project-card {
-        padding: 15px;
-        border-radius: 12px; 
+        padding: 12px !important; 
+        min-width: 0 !important;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .project-card h3 {
-        font-size: 0.9rem;
-        margin-bottom: 8px;
+        font-size: 0.8rem !important;
+        line-height: 1.2;
+        margin: 5px 0;
     }
 
     .project-card p {
-        font-size: 0.75rem; 
-        line-height: 1.3;
+        font-size: 0.65rem !important;
+        line-height: 1.2;
         display: -webkit-box;
-        -webkit-line-clamp: 3; 
+        -webkit-line-clamp: 2; 
         -webkit-box-orient: vertical;
         overflow: hidden;
+        opacity: 0.8;
     }
 
     .project-card span {
-        font-size: 0.7rem; 
+        font-size: 0.6rem;
     }
 
     .card-tag {
-        font-size: 0.6rem;
-        padding: 3px 8px;
-        margin-top: 10px;
+        font-size: 0.55rem !important;
+        padding: 2px 6px !important;
+        margin-top: 8px;
     }
 
     .filter-container {
-        gap: 8px;
+        gap: 5px;
+        padding: 0 10px;
     }
 
     .filter-btn {
-        padding: 6px 12px;
-        font-size: 0.75rem;
-    }
-
-    .about-content h2 {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .social-links {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .mail-link {
-        font-size: 0.8rem;
+        padding: 5px 10px;
+        font-size: 0.65rem;
     }
 }
