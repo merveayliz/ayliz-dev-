@@ -317,4 +317,55 @@ footer {
         padding: 5px 10px;
         font-size: 0.65rem;
     }
+
+ .creds-section {
+        padding: 40px 5%;
+    }
+
+    .creds-container {
+        gap: 15px; 
+    }
+
+    .cred-item {
+        padding: 15px; 
+        max-width: 100%; 
+        flex: 1 1 100%;
+    }
+
+    .cred-item h4 {
+        font-size: 1rem; 
+    }
+
+    .cred-item p {
+        font-size: 0.85rem;
+    }
+
+    .cred-date, .cert-no {
+        font-size: 0.7rem; 
+    }
+
+    .about-section {
+        padding: 50px 8%;
+    }
+
+    .about-content h2 {
+        font-size: 2.2rem !important; 
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .about-content p {
+        font-size: 1rem !important; 
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .gradient-text {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
 }
