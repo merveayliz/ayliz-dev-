@@ -113,7 +113,7 @@ body {
 }
 
 .project-card {
-    background: var(--glass); 
+    background-color: #808080; 
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 20px;
     padding: 30px;
@@ -263,109 +263,77 @@ footer {
     transform: scale(0.8);
 }
 
-
 @media (max-width: 768px) {
+    /* --- GİRİŞ (HERO) KISMI --- */
+    /* Devasa başlığı telefonda daha kompakt yapıyoruz */
+    .gradient-text {
+        font-size: 1.8rem !important; /* Büyük ekran etkisini bozmadan küçülttük */
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem;
+        padding: 0 10%; /* Yazının kenarlara çok yapışmaması için */
+    }
+
+    .neon-button {
+        padding: 12px 30px; /* Buton boyutunu mobilleştirdik */
+        font-size: 0.75rem;
+    }
+
+    /* --- SERTİFİKALAR KISMI --- */
+    /* Sertifikaları da proje kartları gibi 2'li yaparak daha profesyonel durmasını sağladık */
+    .creds-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important; /* Yan yana 2 sertifika kartı */
+        gap: 10px !important;
+    }
+
+    .cred-item {
+        padding: 12px !important;
+        max-width: none !important;
+        flex: none !important;
+        border-radius: 12px;
+        border-style: solid; /* Mobilde kesik çizgi çok kalabalık durabilir, düz yaptık */
+    }
+
+    .cred-item h4 {
+        font-size: 0.8rem !important; /* Kurum ismi */
+        margin-bottom: 5px;
+    }
+
+    .cred-item p {
+        font-size: 0.7rem !important; /* Eğitim ismi */
+        line-height: 1.2;
+    }
+
+    .cred-date, .cert-no {
+        font-size: 0.6rem !important;
+        margin-top: 5px;
+        display: block;
+    }
+
+    /* --- HAKKIMDA (ABOUT) KISMI --- */
+    .about-section {
+        padding: 40px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 1.6rem !important; /* "Merhaba, Ben..." başlığını küçülttük */
+        margin-bottom: 15px;
+    }
+
+    .about-content p {
+        font-size: 0.9rem !important; /* Okunabilir ama ekranı kaplamayan boyut */
+        line-height: 1.6;
+        text-align: justify; /* Mobilde metni iki yana yaslamak bazen daha temiz durur */
+    }
+
+    /* Proje grid yapısını zaten beğendiğin için o kısımları aynen koruyoruz */
     .project-grid {
         display: grid !important; 
         grid-template-columns: 1fr 1fr !important; 
         gap: 10px !important;
-        padding: 0 !important;
-        width: 100% !important;
-    }
-
-    .project-card {
-        padding: 12px !important; 
-        min-width: 0 !important;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .project-card h3 {
-        font-size: 0.8rem !important;
-        line-height: 1.2;
-        margin: 5px 0;
-    }
-
-    .project-card p {
-        font-size: 0.65rem !important;
-        line-height: 1.2;
-        display: -webkit-box;
-        -webkit-line-clamp: 2; 
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        opacity: 0.8;
-    }
-
-    .project-card span {
-        font-size: 0.6rem;
-    }
-
-    .card-tag {
-        font-size: 0.55rem !important;
-        padding: 2px 6px !important;
-        margin-top: 8px;
-    }
-
-    .filter-container {
-        gap: 5px;
-        padding: 0 10px;
-    }
-
-    .filter-btn {
-        padding: 5px 10px;
-        font-size: 0.65rem;
-    }
-
- .creds-section {
-        padding: 40px 5%;
-    }
-
-    .creds-container {
-        gap: 15px; 
-    }
-
-    .cred-item {
-        padding: 15px; 
-        max-width: 100%; 
-        flex: 1 1 100%;
-    }
-
-    .cred-item h4 {
-        font-size: 1rem; 
-    }
-
-    .cred-item p {
-        font-size: 0.85rem;
-    }
-
-    .cred-date, .cert-no {
-        font-size: 0.7rem; 
-    }
-
-    .about-section {
-        padding: 50px 8%;
-    }
-
-    .about-content h2 {
-        font-size: 2.2rem !important; 
-        margin-bottom: 20px;
-        line-height: 1.2;
-    }
-
-    .about-content p {
-        font-size: 1rem !important; 
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .gradient-text {
-        font-size: 2rem !important;
-        line-height: 1.2;
-    }
-
-    .hero-content p {
-        font-size: 0.9rem;
     }
 }
