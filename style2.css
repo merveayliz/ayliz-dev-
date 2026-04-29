@@ -102,7 +102,12 @@ body {
 
 .project-section { padding: 80px 5%; }
 
-.section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; opacity: 0.8; }
+.section-title {
+    text-align: center; 
+    margin-bottom: 50px; 
+    font-size: 2rem; 
+    opacity: 0.8; 
+}
 
 .filter-container {
     display: flex;
@@ -168,7 +173,10 @@ body {
     display: inline-block;
 }
 
-.creds-section { padding: 80px 5%; background: #080808; }
+.creds-section {
+    padding: 80px 5%; 
+    background: #080808; 
+}
 
 .creds-container {
     display: flex;
