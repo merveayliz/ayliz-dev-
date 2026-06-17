@@ -1,50 +1,59 @@
-🚀 AYLIZ.DEV | Junior Front-End Journey
-Merhaba! Ben Merve Ayliz. Bu portfolyo, sıfırdan başladığım yazılım yolculuğumda kendi başıma verdiğim emeğin, uykusuz gecelerin ve "bu kod neden çalışmıyor?" dediğim anlardan "başardım!" dediğim anlara geçişimin bir özetidir.
+# 🚀 AYLIZ.DEV | Junior Front-End Journey
 
-🌟 Projenin Hikayesi
-Bu siteyi sadece projelerimi sergilemek için değil, gelişimimi kanıtlamak için inşa ettim. Yolun çok başında olduğumu biliyorum ama her satır kodu tek başıma araştırarak, bozarak ve yeniden yaparak öğrendim.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-blue?style=for-the-badge" alt="Maintained">
+  <img src="https://img.shields.io/badge/Developer-Ayliz%20Azakl%C4%B1-orange?style=for-the-badge" alt="Developer">
+</p>
 
-Sıfırdan İnşa: Hiçbir hazır şablon kullanmadan, tamamen kendi hayal gücümle tasarladım.
+---
 
-Kendi Kendine Öğrenme: Dokümantasyon okuyarak, hatalarla savaşarak ve pes etmeyerek bu noktaya geldim.
+### 🇹🇷 Türkçe Proje Tanıtımı
 
-Gelişim Odaklı: İlk projemden bu yana mobil uyumluluk (responsive), temiz kod yapısı ve modern UI trendlerini nasıl uyguladığımı bu sitede görebilirsiniz.
+## 📌 Merhaba, Ben Ayliz!
+Bu portfolyo; sıfırdan başladığım yazılım yolculuğumda kendi başıma verdiğim emeğin, uykusuz gecelerin, *"bu kod neden çalışmıyor?"* dediğim anlardan *"başardım!"* gururuna geçişimin dijital bir özetidir. Kendimi her gün geliştirmeye, LinkedIn'de içerik üretmeye ve yeni teknolojiler öğrenmeye adadım.
 
-🛠️ Neler Kullandım?
-HTML5 & CSS3: Semantik yapı ve modern tasarım teknikleri.
+## 🌟 Projenin Hikayesi & Mottosu
+Bu siteyi sadece projelerimi listelemek için değil, **gelişim sürecimi kanıtlamak** için inşa ettim. Yolun başında bir geliştirici olarak her satır kodu tek başıma araştırarak, bozarak ve küllerinden yeniden doğurarak öğrendim.
 
-Modern CSS: Flexbox, CSS Grid, Custom Variables (root) ve gelişmiş animasyonlar (@keyframes).
+* **Sıfırdan İnşa (Vanilla Spirit):** Hiçbir hazır şablon veya bootstrap kütüphanesine dokunmadan, tamamen kendi hayal gücümle piksel piksel tasarladım.
+* **Kendi Kendine Öğrenme (Self-Taught Power):** Dokümantasyon okuyarak, topluluk formlarında hatalarla savaşarak ve asla pes etmeyerek bu noktaya geldim.
+* **Gelişim Odaklı Yapı:** İlk projemden bu yana mobil uyumluluk (responsive), temiz kod yapısı (clean code) ve modern UI trendlerini nasıl harmanladığımı bu eserde görebilirsiniz.
 
-Responsive Design: Her ekranda kusursuz görünüm için clamp() ve Media Queries.
+---
 
-GitHub: Versiyon kontrolü ve sürekli yayınlama (Deployment).
+### 🇬🇧 English Project Description
 
-📈 Hedeflerim
-Bu benim için bir bitiş değil, sadece başlangıç. Hedefim, tasarımın estetiği ile JavaScript'in gücünü birleştirerek "yaşayan" dijital deneyimler üretmeye devam etmek.
+## 📌 Hello, I'm Ayliz!
+This portfolio is a live summary of my self-taught coding journey, the raw dedication I've put in from scratch, and the transition from *"why isn't this code working?"* to the triumphant *"I did it!"* moments. I am committed to daily learning, actively sharing on LinkedIn, and pushing my boundaries.
 
+## 🌟 The Story Behind the Project
+I built this site not just to showcase my portfolio, but to **validate my evolution** as a developer. I know I am at the entry gates of this massive tech world, but I’ve mastered every line of code by researching, breaking, and rebuilding everything on my own.
 
+* **Built from Scratch:** Designed entirely out of my own imagination, without leaning on any pre-made frameworks or ready-to-use UI kits.
+* **Proudly Self-Taught:** Driven by pure curiosity—reading documentations, debugging late-night errors, and never backing down.
+* **Growth-Oriented Mindset:** From my very first web page to this advanced UI, you can track how I evolved in responsive mechanics, semantic patterns, and cutting-edge UI trends.
 
+---
 
-🚀 AYLIZ.DEV | Junior Front-End Journey
-Hello! I'm Merve Ayliz. This portfolio is a summary of my self-taught coding journey, the hard work I've put in from scratch, and the transition from "why isn't this code working?" to "I did it!"
+## 🛠️ Teknolojik Altyapı / Tech Stack
 
-🌟 The Story of the Project
-I built this site not just to showcase my projects, but to prove my growth. I know I'm at the very beginning of my path, but I learned every line of code by researching, breaking, and rebuilding everything on my own.
+| Teknoloji / Tool | Kullanım Amacı / Purpose |
+| :--- | :--- |
+| **HTML5 & CSS3** | Semantik, SEO dostu yapı ve modern tasarım mimarisi. |
+| **Gelişmiş CSS** | Flexbox, CSS Grid, Custom Variables (`:root`) ve akıcı `@keyframes` animasyonları. |
+| **Responsive UI** | `clamp()`, `calc()` ve esnek Media Queries ile her cihazda kusursuz responsive deneyim. |
+| **Git & GitHub** | Versiyon kontrolü, düzenli commit kültürü ve Continuous Deployment (Sürekli Yayınlama). |
 
-Built from Scratch: Designed entirely with my own imagination, without using any pre-made templates.
+---
 
-Self-Taught: I reached this point by reading documentations, fighting bugs, and never giving up.
+## 📈 Gelecek Hedefleri / My Future Milestones
+Bu benim için bir durak değil, sadece yakıt ikmali! Kısa vadeli hedefim; tasarımın estetik gücü ile **JavaScript (ES6+) ve React** ekosisteminin dinamikliğini birleştirerek kullanıcıyı büyüleyen, "yaşayan" web otomasyonları ve ticari şablonlar üretmeye devam etmek.
 
-Growth-Oriented: You can see how I’ve evolved since my first project by looking at the responsive design, clean code structure, and modern UI trends implemented here.
+---
 
-🛠️ Tech Stack
-HTML5 & CSS3: Semantic structure and modern design techniques.
+## 👩‍💻 İletişim & Bağlantılar / Connect With Me
 
-Modern CSS: Flexbox, CSS Grid, Custom Variables (root), and advanced animations (@keyframes).
-
-Responsive Design: Using clamp() and Media Queries for a seamless experience on any device.
-
-GitHub: For version control and continuous deployment.
-
-📈 My Goals
-This is not an end for me; it's just the beginning. My goal is to continue creating "living" digital experiences by combining aesthetic design with the power of JavaScript.
+* **LinkedIn:** [Ayliz Azaklı](https://www.linkedin.com/in/ayliz-azaklı-74579b318/) (Her gün teknik paylaşımlarla buradayım!)
+* **GitHub:** [@merveayliz](https://github.com/merveayliz)
+* **Canlı Portfolyo:** [ayliz.dev](https://merveayliz.github.io/ayliz-dev-/)
