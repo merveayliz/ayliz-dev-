@@ -36,21 +36,6 @@ I built this site not just to showcase my portfolio, but to **validate my evolut
 
 ---
 
-## 🛠️ Teknolojik Altyapı / Tech Stack
-
-| Teknoloji / Tool | Kullanım Amacı / Purpose |
-| :--- | :--- |
-| **HTML5 & CSS3** | Semantik, SEO dostu yapı ve modern tasarım mimarisi. |
-| **Gelişmiş CSS** | Flexbox, CSS Grid, Custom Variables (`:root`) ve akıcı `@keyframes` animasyonları. |
-| **Responsive UI** | `clamp()`, `calc()` ve esnek Media Queries ile her cihazda kusursuz responsive deneyim. |
-| **Git & GitHub** | Versiyon kontrolü, düzenli commit kültürü ve Continuous Deployment (Sürekli Yayınlama). |
-
----
-
-## 📈 Gelecek Hedefleri / My Future Milestones
-Bu benim için bir durak değil, sadece yakıt ikmali! Kısa vadeli hedefim; tasarımın estetik gücü ile **JavaScript (ES6+) ve React** ekosisteminin dinamikliğini birleştirerek kullanıcıyı büyüleyen, "yaşayan" web otomasyonları ve ticari şablonlar üretmeye devam etmek.
-
----
 
 ## 👩‍💻 İletişim & Bağlantılar / Connect With Me
 
