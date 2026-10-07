@@ -36,7 +36,6 @@ I built this site not just to showcase my portfolio, but to **validate my evolut
 
 ---
 
-
 ## 👩‍💻 İletişim & Bağlantılar / Connect With Me
 
 * **LinkedIn:** [Ayliz Azaklı](https://www.linkedin.com/in/ayliz-azaklı-74579b318/) (Her gün teknik paylaşımlarla buradayım!)
