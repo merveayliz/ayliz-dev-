@@ -6,6 +6,7 @@
   <img src="https://img.shields.io/badge/Developer-Ayliz%20Azakl%C4%B1-orange?style=for-the-badge" alt="Developer">
 </p>
 
+
 ---
 
 ### 🇹🇷 Türkçe Proje Tanıtımı
