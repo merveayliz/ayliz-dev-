@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/Developer-Ayliz%20Azakl%C4%B1-orange?style=for-the-badge" alt="Developer">
 </p>
 
-
 ---
 
 ### 🇹🇷 Türkçe Proje Tanıtımı
@@ -36,8 +35,6 @@ I built this site not just to showcase my portfolio, but to **validate my evolut
 * **Growth-Oriented Mindset:** From my very first web page to this advanced UI, you can track how I evolved in responsive mechanics, semantic patterns, and cutting-edge UI trends.
 
 ---
-
-
 ## 👩‍💻 İletişim & Bağlantılar / Connect With Me
 
 * **LinkedIn:** [Ayliz Azaklı](https://www.linkedin.com/in/ayliz-azaklı-74579b318/) (Her gün teknik paylaşımlarla buradayım!)
